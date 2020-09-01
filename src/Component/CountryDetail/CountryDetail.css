@@ -1,0 +1,12 @@
+.country{
+    display: flex;
+    justify-content:space-evenly;
+    margin: 50px;
+    padding:20px;
+    border: 2px dashed skyblue;
+    box-shadow: 5px 5px 5px lightgrey;
+}
+.country img{
+    width: 200px;
+    height: 200px;
+}
