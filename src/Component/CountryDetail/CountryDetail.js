@@ -1,12 +1,16 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
 import "./CountryDetail.css";
 
 
 const CountryDetail = (props) => {
-
     let { name, region, area, currencies} = props.country;
 
+    const country = useHistory();
+
+    const handleClick = () =>{
+        country.push(`/country/${name}`)
+    }
     return (
         <div className="country">
             
@@ -18,8 +22,9 @@ const CountryDetail = (props) => {
                 <h3>Name : {name}</h3>
                 <p>Regin : {region}</p>
                 <p>Area : {area}</p>
-                <p>Currency : {currencies[0].name}</p>
+                <p>Currency : {currencies[0].name}</p> 
                 <p><Link to={`/country/${name}`}>No.1 {name}</Link></p>
+                <button onClick={() => handleClick()}>Mango Country</button>
             </div>
             
         </div>

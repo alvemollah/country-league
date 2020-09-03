@@ -1,0 +1,7 @@
+
+1. setCountryDetails(data[0]), karon amader 0 no index a 
+   j object ta ache ota dorkar...
+
+2. data holo ekta array. array tar first index e country 
+   object ta ache. ejonno array er first index access 
+   korte 0 use kora hoyeche

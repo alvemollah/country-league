@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 import Home from './Component/Home/Home';
 import NotFound from './Component/NotFound/NotFound';
-import CountryDetail from './Component/CountryDetail/CountryDetail';
+import Country from './Component/Country/Country';
 
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
           </Route>
 
           <Route exact path="/country/:countryId">
-            <CountryDetail></CountryDetail>
+            <Country></Country>
           </Route>
 
           <Route exact path="/">
